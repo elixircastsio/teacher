@@ -45,12 +45,16 @@ a {
   text-decoration: underline;
 }
 
-.flash-success {
+.alert:empty {
+  display:none;
+}
+
+p.alert.alert-info {
   padding: 7px;
   background: #DFF0D8;
 }
 
-.flash-error {
+p.alert.alert-danger {
   padding: 7px;
   background: #F2DEDE;
 }
@@ -71,3 +75,37 @@ table, th, td {
   border: 1px solid black;
 }
 
+.elixircasts-form {
+  margin-bottom: 10px;
+}
+
+.elixircasts-form label {
+    display: block;
+    margin: 0px 0px 5px;
+}
+
+.elixircasts-form input[type="text"], .elixircasts-form input[type="email"], .elixircasts-form textarea, .elixircasts-form select{
+    border: 1px solid #000;
+    color: #000;
+    font-size: 14px;
+    height: 20px;
+    line-height:15px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 5px 0px 5px 5px;
+    width: 70%;
+}
+
+.elixircasts-form .help-block {
+  background: #F2DEDE;
+}
+
+.elixircasts-form select {
+    height: 35px;
+}
+.elixircasts-form textarea{
+    height:100px;
+    padding: 5px 0px 0px 5px;
+}
